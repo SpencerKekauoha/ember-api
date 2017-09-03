@@ -1,0 +1,23 @@
+input {
+  background: salmon;
+  width: 300px;
+  &::-webkit-input-placeholder {
+    color: black;
+  }
+  &:-moz-placeholder {
+    color: black;
+    opacity: 1;
+  }
+  &::-moz-placeholder {
+    color: black;
+    opacity: 1;
+  }
+  &:-ms-input-placeholder {
+    color: black;
+  }
+}
+
+button {
+  background: salmon;
+  color: black;
+}

@@ -1,5 +1,19 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<h1>Search IMDB</h1>
+
+{{input type=text value=query placeholder="Search by Title, Director, Actor, IMDB ID"}}
+
+<button type="button" {{action "queryApi" query}}>Search</button>
+
+<!-- {{ model.showData }} -->
+
+<ul>
+  {{#each model as |search|}}
+    <li>{{ search }}</li>
+  {{/each}}
+</ul>
+
+<p>
+  If you search, data from the api is showing in the console.
+</p>
 
 {{outlet}}
